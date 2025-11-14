@@ -1,0 +1,5 @@
+- [ ] Examine index.html to understand current video implementation
+- [ ] Analyze image ratios on the index page
+- [ ] Scale down video to match image proportions
+- [ ] Ensure full screen capability is preserved
+- [ ] Test the changes

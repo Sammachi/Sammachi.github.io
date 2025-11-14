@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clash Royale — Memory Match</title>
+  <link rel="stylesheet" href="CSS/game.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header class="site-header small-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html"><div><h1 class="brand-title">Sam Machi</h1><div class="brand-sub">Artist • Student • Hiker</div></div></a>
+  <button class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" type="button">☰</button>
+  <nav id="siteNav" class="site-nav"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="game.html" aria-current="page">Game</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main class="game-container">
+    <div class="stats">
+      <div id="timer" aria-live="polite">Time: 00:00</div>
+      <div id="moves" aria-live="polite">Moves: 0</div>
+    </div>
+
+    <div class="instructions card" aria-hidden="false">
+      <h3>How to play</h3>
+      <p>Flip two tiles to find matching icons. Use the keyboard: arrow keys to navigate tiles, Enter or Space to flip. Click Start to begin the timer (or simply just start playing).</p>
+      <p>Press <strong>R</strong> to restart the game at any time.</p>
+    </div>
+
+    <!-- Announcer for accessibility (screen readers) -->
+    <div id="gameAnnouncer" class="sr-only" aria-live="polite"></div>
+
+    <div id="gameGrid" class="game-board" aria-live="polite" aria-label="Memory game board"></div>
+
+    <div class="controls">
+      <button id="startBtn" type="button">Start Game</button>
+      <button id="restartBtn" type="button">Restart</button>
+      <button id="muteBtn" type="button" aria-pressed="false">🔊</button>
+    </div>
+
+    <!-- Game audio -->
+    <audio id="gameAudio" loop>
+      <source src="files/audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="overlay" class="overlay">
+      <div id="winMessage" hidden>
+        <h2>🎉 Victory!</h2>
+        <p id="winStats"></p>
+        <button id="playAgain" type="button">Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/memory-game-clash.js"></script>
+</body>
+</html>

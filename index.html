@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sam Machi — Portfolio</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- game.css is safe to include; it only affects .game pages -->
+  <link rel="stylesheet" href="CSS/game.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#maincontent" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        
+        <div>
+          <h1 class="brand-title">Sam Machi</h1>
+          <div class="brand-sub">Artist • Student • Hiker</div>
+        </div>
+      </a>
+  <button class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" type="button">☰</button>
+
+  <nav id="siteNav" class="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="discover.html">Discover UMD</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="game.html">Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="maincontent" class="container">
+    <section class="hero card" aria-labelledby="welcome-heading">
+      <div>
+        <p class="kicker">Welcome</p>
+        <h2 id="welcome-heading">Hi, I'm Sam</h2>
+        <p class="lead">I’m a creative bound individual with a passion for both business and the arts. I balance work and school — Associates + trade certificate — and I’m currently pursuing Accounting. I enjoy hiking, creating art, and thoughtful coffee experimentation.</p>
+
+        <div class="actions">
+          <a class="btn" href="resume.html">View Resume</a>
+          <a class="btn secondary" href="hobbies.html">My Hobbies</a>
+        </div>
+      </div>
+
+      <aside class="photo">
+        <img loading="lazy" src="images/profphoto.jpg" alt="Professional headshot of Samantha" class="about-photo responsive-image" />
+      </aside>
+    </section>
+
+  <section class="card">
+      <h3 class="kicker">Intro video</h3>
+      <div class="video-embed">
+        <video controls class="responsive-video">
+          <source src="videos/Introvideomis.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h4>Professional intro</h4>
+          <p>Hi, I’m Samantha. I’m a dedicated worker eager to contribute and grow. 7+ years of work experience, degree in Business Management, currently studying Accounting.</p>
+        </div>
+        <div>
+          <h4>Quick hobbies</h4>
+          <ul class="quick-hobbies-list">
+            <li>Hiking — rivers & waterfalls</li>
+            <li>Art — pastels, oil, clay</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <section class="grid-3">
+      <article class="card">
+        <h4>Hiking</h4>
+    <figure>
+  <img loading="lazy" src="images/hikinghobby.jpg" alt="Trail with autumn leaves" class="hobby-photo" />
+          <figcaption class="photo-caption">Northern Hike</figcaption>
+        </figure>
+        <p class="small">Favorite hikes in the Yellowstone & Montana regions.</p>
+      </article>
+
+      <article class="card">
+        <h4>Art</h4>
+        <figure>
+          <img loading="lazy" src="images/arthobby.jpg" alt="Charcoal drawing" class="hobby-photo" />
+          <figcaption class="photo-caption">Blue Heron study</figcaption>
+        </figure>
+        <p class="small">Working with many mediums of art.</p>
+      </article>
+
+      <article class="card">
+        <h4>Contact</h4>
+        <p class="small">Interested in commissions or collaboration? <a href="resume.html#contact" class="link">Send a message</a>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">&copy; <span id="year"></span> Samantha Machi</div>
+      <div class="small">Nature-themed • responsive • accessible</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

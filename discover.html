@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discover UMD & Duluth — Sam</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html"><div><h1 class="brand-title">Sam Machi</h1><div class="brand-sub">Artist • Student • Hiker</div></div></a>
+  <button class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" type="button">☰</button>
+  <nav id="siteNav" class="site-nav"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="discover.html" aria-current="page">Discover UMD</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Why I chose University of Minnesota Duluth</h2>
+      <p>Duluth offers the outdoors I love while still being reasonably close to home. I’m studying Accounting here and I enjoy being near Lake Superior.</p>
+
+      <h3>What I like about Duluth</h3>
+      <ul>
+        <li>Lake Superior views</li>
+        <li>Close trails and waterfalls</li>
+        <li>Unique study spaces like Duluth Underground</li>
+      </ul>
+
+      <h3>Marketing video</h3>
+      <div class="video-embed">
+        <video controls class="responsive-video">
+          <source src="videos/misvideo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">&copy; <span id="year3"></span> Samantha Machi</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

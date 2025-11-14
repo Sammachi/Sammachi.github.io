@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Sam Machi</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html"><div><h1 class="brand-title">Sam Machi</h1><div class="brand-sub">Artist • Student • Hiker</div></div></a>
+  <button class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" type="button">☰</button>
+  <nav id="siteNav" class="site-nav"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="discover.html">Discover UMD</a></li>
+        <li><a href="resume.html" aria-current="page">Resume</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card resume-grid">
+      <div>
+        <header>
+          <h1>Resume — Samantha (Sam) Machi</h1>
+          <p class="small">Professional summary: Dedicated worker with 7+ years of experience, degree in Business Management, currently pursuing Accounting at University of Minnesota Duluth.</p>
+        </header>
+
+        <section id="education">
+          <h2>Education</h2>
+          <dl>
+            <dt>University of Minnesota Duluth</dt>
+            <dd>Bachelors of Accounting — in progress</dd>
+            <dt>Associate Degree in Business Management</dt>
+            <dd>Trade Certificate in Leadership</dd>
+          </dl>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <ol>
+            <li>
+              <h3>Retail Back-House work & Commission work</h3>
+              <p>7+ years handling scheduling, client communication, and project delivery for commissioned art and service roles.</p>
+              <p>Experience in leadership, retail mechandising, asset protection, inventory management, and vendor/3rd party communication. </p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>Accounting fundamentals (coursework)</li>
+            <li>Communication, time management</li>
+            <li>Inventory management, leadership, merchandising, 3rd party communication</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="card">
+        <h2>Resume & Contact</h2>
+        <p class="small">Download a printable PDF version of this resume.</p>
+        <a class="btn" href="files/SamanthaMachiResume2025revised.pdf" download>Download PDF</a>
+
+        <section id="contact" style="margin-top:1rem">
+          <h3>Contact</h3>
+          <p class="small">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+
+          <form action="#" method="post" aria-label="Contact form">
+            <div style="margin-top:.5rem">
+              <label for="name">Name</label><br />
+              <input id="name" name="name" type="text" required style="width:100%" />
+            </div>
+            <div style="margin-top:.5rem">
+              <label for="email">Email</label><br />
+              <input id="email" name="email" type="email" required style="width:100%" />
+            </div>
+            <div style="margin-top:.5rem">
+              <label for="message">Message</label><br />
+              <textarea id="message" name="message" rows="4" style="width:100%"></textarea>
+            </div>
+            <div style="margin-top:.5rem">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">&copy; <span id="year4"></span> Samantha Machi</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

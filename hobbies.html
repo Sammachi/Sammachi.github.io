@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobbies — Sam Machi</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html"><div><h1 class="brand-title">Sam Machi</h1><div class="brand-sub">Artist • Student • Hiker</div></div></a>
+  <button class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" type="button">☰</button>
+  <nav id="siteNav" class="site-nav"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html" aria-current="page">Hobbies</a></li>
+        <li><a href="discover.html">Discover UMD</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Hobbies & Favorite Activities</h2>
+      <p>Two of my absolute favorite hobbies are hiking and art. Growing up in Wisconsin I explored the north woods frequently as a child which eventually led to my interest in hiking and exploring. My absolute favorite hikes include hikes out west in Montana and the Yellowstone region of Wyoming. Although I’m not able to visit as much as I would like, out west is my favorite place to be in the United States. Since I was in elementary school I’ve been filling the pages of my homework and assignments with little doodles. This eventually led into me being a full blown artist and even being able to make money from this passion. I have been creating art for about 11 years now and involve myself in many mediums. I find myself working with pastels, oil paint, clay, pottery, charcoal, and so forth. I am always in awe of the nature and animals around me which is reflected in my artwork. I find it to be such a gift to hold something in my hands that I made myself inspired by the things I enjoy most in life. </p>
+
+      <section>
+        <figure>
+          <img loading="lazy" src="images/hikinggooseberry1.JPEG" alt="Landscape photo of Gooseberry Falls" class="hobby-photo" />
+          <figcaption class="photo-caption">Gooseberry Falls State Park</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Hiking</h3>
+        <div class="photo-gallery grid-3">
+          <figure>
+            <img loading="lazy" src="images/hikinghobby.jpg" alt="Waterfall trail" class="hobby-photo" />
+            <figcaption class="photo-caption">North woods trail</figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="images/hikinghobby2.jpg" alt="Trail with pine trees" class="hobby-photo" />
+            <figcaption class="photo-caption">Pine trail</figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="images/arthobby.jpg" alt="Sketchbook in the woods" class="hobby-photo" />
+            <figcaption class="photo-caption">Sketch outdoors</figcaption>
+          </figure>
+          
+        </div>
+        
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">&copy; <span id="year2"></span> Samantha Machi</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
